@@ -1,38 +1,148 @@
-.App {
-  text-align: center;
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Proxima Nova', Arial;
+}
+.hero
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./assets/images/background.svg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+.logo
+{
+    width: 200px;
+    cursor: pointer;
+}
+.navbar
+{
+    width: 85%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navcontent
+{
+    margin-left: auto;
+    justify-content: space-between;
+}
+.navtab
+{
+    color: #fbfcfd;
+    margin: 10px;
+}
+.loginbutton
+{
+    color: #fbfcfd;
+    padding: 10px 25px;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius:20px;
+    outline: none;
+    cursor: pointer;
+}
+.loginbutton:hover
+{
+    background-color: #fff;
+    color: #5931EA;
+}
+/* Style The Dropdown Button */
+.dropbtn {
+    background: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #5931EA;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #fbfcfd;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
 
-.App-link {
-  color: #61dafb;
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #522bdd}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+display: block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #8c6dfc;
+}
+.content{
+    margin: 0;
+    color: #fbfcfd;
+    position: absolute;
+    text-align:center;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    overflow: hidden;
+}
+h2
+{
+    position: relative;
+    font-size: 4em;
+    font-weight: 700;
+    color: #fff;
+    z-index: 1;
+    overflow: hidden;
+}
+h3
+{
+    margin-top: 10px;
+    position: relative;
+    font-size: 2em;
+    font-weight: 300;
+    color: #fff;
+    z-index: 1;
+    overflow: hidden;
+}
+.getstarted
+{   
+    margin-top: 30px;
+    background-color: #fff;
+    color: #5931EA;
+    padding: 10px 25px;
+    border: 1px solid #fff;
+    border-radius:20px;
+    outline: none;
+    cursor: pointer;
+}
+.getstarted:hover
+{
+    background-color: #5931EA;
+    color: #fff;
 }
